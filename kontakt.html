@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | Thomas Richter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        .contact-content {
+            max-width: 600px;
+            margin: 10px auto;
+            text-align: center;
+        }
+
+        .contact-details {
+            margin: 30px 0;
+            line-height: 1.6;
+            text-align: left;
+            display: inline-block;
+        }
+
+        .contact-details p {
+            margin: 8px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-details i {
+            color: #0077b5;
+            margin-right: 15px;
+            width: 20px;
+            text-align: center;
+        }
+
+        .contact-details a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            text-align: left;
+            margin-top: 30px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: inherit;
+        }
+
+        .btn-submit {
+            background-color: #0077b5;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn-submit:hover {
+            background-color: #005a87;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header style="position: relative;">
+        <div class="hero-nav-left">
+            <a href="index.html" class="hero-btn-glass hero-home-link">
+                <i class="fa-solid fa-house"></i> Home
+            </a>
+        </div>
+
+        <div class="hero-image">
+            <div class="hero-text fade-in">
+                <h1>Kontakt</h1>
+                <p>Gerne stehe ich Ihnen für Fragen und Informationen zur Verfügung. Kontaktieren Sie mich über die
+                    folgenden Kanäle:</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="card contact-content">
+            <h2>Kontaktdaten</h2>
+
+            <div class="contact-details">
+                <p><strong>Thomas Richter</strong></p>
+                <p><i class="fa-solid fa-location-dot"></i> Klein Ströbitzer Str. 22, 03046 Cottbus</p>
+                <p><i class="fa-solid fa-phone"></i> Phone: <a href="tel:+493552892798">+49 355 2892798</a></p>
+                <p><i class="fa-solid fa-mobile-screen-button"></i> Mobile: <a href="tel:+4915154659439">+49 151
+                        54659439</a></p>
+                <p><i class="fa-solid fa-envelope"></i> <a
+                        href="mailto:thomas.richter@richtersolutions.de">thomas.richter@richtersolutions.de</a></p>
+                <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/thomas-richter-rs"
+                        target="_blank">LinkedIn-Profil</a></p>
+                <p><i class="fa-brands fa-xing"></i> <a href="https://www.xing.com/profile/Thomas_Richter300"
+                        target="_blank">Xing-Profil</a></p>
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid #eee; margin: 30px 0;">
+            <form class="contact-form" id="emailForm">
+                <input type="text" id="name" placeholder="Ihr Name" required>
+                <input type="email" id="email" placeholder="Ihre E-Mail-Adresse" required>
+                <input type="text" id="subject" placeholder="Betreff">
+                <textarea id="message" rows="5" placeholder="Ihre Nachricht" required></textarea>
+                <button type="button" class="btn-submit" onclick="sendMail()">E-Mail Entwurf erstellen</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2026 Thomas Richter Solutions | Cottbus | Senior IT-Consultant |
+        <a href="impressum.html" style="color: #777e; text-decoration: none; margin-left: 5px;">Impressum</a> |
+        <a href="datenschutz.html" style="color: #777; text-decoration: none; margin-left: 5px;">Datenschutz</a>
+    </footer>
+
+    <script>
+        function sendMail() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value || "Kontaktanfrage";
+            const message = document.getElementById('message').value;
+
+            // Erstellung des Mail-Bodys mit Name und Nachricht
+            const body = `Name: ${name}\nE-Mail: ${email}\n\nNachricht:\n${message}`;
+
+            // Korrektes Encoding für Outlook (wichtig für Umbrüche und Sonderzeichen)
+            const mailtoUrl = `mailto:thomas.richter@richtersolutions.de?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+            // Öffnet den Standard-Mail-Client
+            window.location.href = mailtoUrl;
+        }
+    </script>
+
+</body>
+
+</html>
