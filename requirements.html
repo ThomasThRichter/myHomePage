@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,19 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
-        .hero-sub {
-            background: linear-gradient(rgba(0, 44, 80, 0.8), rgba(0, 44, 80, 0.8)), 
-                        url('iStock-2216175729.jpg') no-repeat center center;
+        .hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('./images/istockphoto-2223932466-1024x1024.jpg');
             background-size: cover;
             padding: 4rem 1rem;
             color: white;
             text-align: center;
         }
-        .tech-category { margin-top: 2rem; }
+
+        .tech-category {
+            margin-top: 2rem;
+        }
+
         .tech-tag {
             display: inline-block;
             background: #e8eff5;
@@ -28,65 +33,89 @@
         }
     </style>
 </head>
+
 <body>
 
-<header>
-    <nav class="container" style="display: flex; justify-content: space-between; align-items: center;">
-        <a href="download_cv_v3.html" style="color: white; text-decoration: none; font-weight: bold;">Thomas Richter</a>
-        <a href="download_cv_v3.html" style="color: white; text-decoration: none;"> <i class="fa-solid fa-arrow-left"></i> Zurück zur Übersicht</a>
-    </nav>
-</header>
+    <body>
 
-<div class="hero-sub">
-    <h1>Business Analysis & Requirements Engineering</h1>
-    <p>Präzise Anforderungsaufnahme als Brücke zwischen Business und IT.</p>
-</div>
+        <header style="position: relative;">
+            <div class="hero-nav-left">
+                <a href="index.html" class="hero-btn-glass hero-home-link">
+                    <i class="fa-solid fa-house"></i> Home
+                </a>
+            </div>
+            <nav class="hero-nav-top">
+                <a href="kontakt.html" class="hero-btn-glass">
+                    <i class="fa-solid fa-envelope"></i> Kontakt
+                </a>
+                <a href="https://www.linkedin.com/in/thomas-richter-rs" target="_blank" class="hero-btn-glass">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://www.xing.com/profile/Thomas_Richter300" target="_blank" class="hero-btn-glass">
+                    <i class="fa-brands fa-xing"></i> Xing
+                </a>
+            </nav>
 
-<main class="container">
-    <div class="card">
-        <h2>Anforderungsmanagement & Prozessanalyse</h2>
-        <p>
-            Mit über 35 Jahren Erfahrung in der Digitalisierung verstehe ich mich als Vermittler zwischen fachlichen Anforderungen und technischer Umsetzbarkeit. 
-            Ich unterstütze Unternehmen dabei, komplexe Geschäftsprozesse zu analysieren, zu strukturieren und in präzise technische Anforderungen zu übersetzen.
-        </p>
+            <div class="hero-image">
+                <div class="hero-text fade-in">
+                    <h1>Business Analysis & Requirements Engineering</h1>
+                    <p>Präzise Anforderungsaufnahme als Brücke zwischen Business und IT..</p>
+                </div>
+            </div>
+        </header>
 
-        <div class="tech-category">
-            <h3><i class="fa-solid fa-clipboard-list"></i> Methoden & Standards</h3>
-            <span class="tech-tag">Requirements Engineering</span>
-            <span class="tech-tag">Prozessanalyse</span>
-            <span class="tech-tag">User Story Mapping</span>
-            <span class="tech-tag">BPMN / UML</span>
-        </div>
 
-        <div class="tech-category">
-            <h3><i class="fa-solid fa-gears"></i> Tools & Dokumentation</h3>
-            <span class="tech-tag">Jira Software</span>
-            <span class="tech-tag">Confluence</span>
-            <span class="tech-tag">Stakeholder-Management</span>
-            <span class="tech-tag">Anforderungs-Spezifikation</span>
-        </div>
+        <main class="container">
+            <div class="card">
+                <h2>Business Analysis & Requirements Engineering</h2>
+                <p class="summary">
+                    Brückenbauer zwischen Fachbereich und Technik.
+                    Ich übersetze komplexe Anforderungen in präzise Funktionsmodelle (UML 2.0 | BPMN | Camunda) und
+                    sorge für eine nachhaltige Prozessoptimierung, insbesondere im Bereich <strong>Trassenmanagement
+                        (TAF/TAP-TSI)</strong>
+                    und Abrechnungssysteme.
+                </p>
 
-        <div class="tech-category">
-            <h3><i class="fa-solid fa-users"></i> Fokus & Rollen</h3>
-            <span class="tech-tag">Certified Scrum Product Owner (CSPO)</span>
-            <span class="tech-tag">Schnittstellenmanagement</span>
-            <span class="tech-tag">Anforderungs-Workshop Moderation</span>
-        </div>
+                <div class="tech-category">
+                    <h3><i class="fa-solid fa-clipboard-list"></i> Methoden & Standards</h3>
+                    <span class="tech-tag">Requirements Engineering</span>
+                    <span class="tech-tag">Prozessanalyse</span>
+                    <span class="tech-tag">User Story Mapping</span>
+                    <span class="tech-tag">BPMN / UML</span>
+                </div>
 
-        <h3 style="margin-top: 2.5rem;">Kernleistungen in der Business Analysis</h3>
-        <ul>
-            <li>Strukturierte Aufnahme und Verwaltung von Anforderungen in Jira und Confluence.</li>
-            <li>Modellierung und Optimierung von Geschäftsprozessen zur Effizienzsteigerung.</li>
-            <li>Erstellung von Backlogs, User Stories und Akzeptanzkriterien als CSPO.</li>
-            <li>Durchführung von Stakeholder-Analysen zur Sicherstellung der Projektziele.</li>
-            <li>Begleitung der Software-Auswahl und Evaluierung von Lösungsszenarien.</li>
-        </ul>
-    </div>
-</main>
+                <div class="tech-category">
+                    <h3><i class="fa-solid fa-gears"></i> Tools & Dokumentation</h3>
+                    <span class="tech-tag">Jira Software</span>
+                    <span class="tech-tag">Confluence</span>
+                    <span class="tech-tag">Stakeholder-Management</span>
+                    <span class="tech-tag">Anforderungs-Spezifikation</span>
+                </div>
 
-<footer>
-    <p>&copy; 2026 Thomas Richter | <a href="impressum.html">Impressum</a></p>
-</footer>
+                <div class="tech-category">
+                    <h3><i class="fa-solid fa-users"></i> Fokus & Rollen</h3>
+                    <span class="tech-tag">Certified Scrum Product Owner (CSPO)</span>
+                    <span class="tech-tag">Schnittstellenmanagement</span>
+                    <span class="tech-tag">Anforderungs-Workshop Moderation</span>
+                </div>
 
-</body>
+                <h3 style="margin-top: 2.5rem;">Kernleistungen in der Business Analysis</h3>
+                <ul>
+                    <li>Strukturierte Aufnahme und Verwaltung von Anforderungen in Jira und Confluence.</li>
+                    <li>Modellierung und Optimierung von Geschäftsprozessen zur Effizienzsteigerung.</li>
+                    <li>Erstellung von Backlogs, User Stories und Akzeptanzkriterien als CSPO.</li>
+                    <li>Durchführung von Stakeholder-Analysen zur Sicherstellung der Projektziele.</li>
+                    <li>Begleitung der Software-Auswahl und Evaluierung von Lösungsszenarien.</li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            &copy; 2026 Thomas Richter Solutions | Cottbus | Senior IT-Consultant |
+            <a href="impressum.html" style="color: #777e; text-decoration: none; margin-left: 5px;">Impressum</a> |
+            <a href="datenschutz.html" style="color: #777; text-decoration: none; margin-left: 5px;">Datenschutz</a>
+        </footer>
+
+    </body>
+
 </html>

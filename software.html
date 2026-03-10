@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,19 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
-        .hero-sub {
-            background: linear-gradient(rgba(0, 44, 80, 0.8), rgba(0, 44, 80, 0.8)), 
-                        url('iStock-2216175729.jpg') no-repeat center center;
+        .hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('./images/cloud-storage-background-business-network-design.jpg');
             background-size: cover;
             padding: 4rem 1rem;
             color: white;
             text-align: center;
         }
-        .tech-category { margin-top: 2rem; }
+
+        .tech-category {
+            margin-top: 2rem;
+        }
+
         .tech-tag {
             display: inline-block;
             background: #e8eff5;
@@ -28,69 +33,91 @@
         }
     </style>
 </head>
+
 <body>
 
-<header>
-    <nav class="container" style="display: flex; justify-content: space-between; align-items: center;">
-        <a href="download_cv_v3.html" style="color: white; text-decoration: none; font-weight: bold;">Thomas Richter</a>
-        <a href="download_cv_v3.html" style="color: white; text-decoration: none;"> <i class="fa-solid fa-arrow-left"></i> Zurück zur Übersicht</a>
-    </nav>
-</header>
-
-<div class="hero-sub">
-    <h1>Software Engineering & Architektur</h1>
-    <p>Nachhaltige Softwarelösungen durch 35 Jahre IT-Expertise.</p>
-</div>
-
-<main class="container">
-    <div class="card">
-        <h2>Technologie-Stack & Expertise</h2>
-        <p>
-            Mein Fokus liegt auf der Entwicklung robuster Enterprise-Anwendungen und der Architektur moderner Cloud-Systeme. 
-            Dabei kombiniere ich bewährte Methoden mit zukunftsweisenden Technologien.
-        </p>
-
-        
-
-[Image of Cloud Software Architecture Diagram]
-
-
-        <div class="tech-category">
-            <h3><i class="fa-solid fa-code"></i> Backend & Sprachen</h3>
-            <span class="tech-tag">Java (J2EE)</span>
-            <span class="tech-tag">Smalltalk</span>
-            <span class="tech-tag">Objektorientierte Programmierung (OOP)</span>
-            <span class="tech-tag">Enterprise Architecture</span>
+    <header style="position: relative;">
+        <div class="hero-nav-left">
+            <a href="index.html" class="hero-btn-glass hero-home-link">
+                <i class="fa-solid fa-house"></i> Home
+            </a>
         </div>
+        <nav class="hero-nav-top">
+            <a href="kontakt.html" class="hero-btn-glass">
+                <i class="fa-solid fa-envelope"></i> Kontakt
+            </a>
+            <a href="https://www.linkedin.com/in/thomas-richter-rs" target="_blank" class="hero-btn-glass">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://www.xing.com/profile/Thomas_Richter300" target="_blank" class="hero-btn-glass">
+                <i class="fa-brands fa-xing"></i> Xing
+            </a>
+        </nav>
 
-        <div class="tech-category">
-            <h3><i class="fa-solid fa-cloud"></i> Infrastructure & Cloud</h3>
-            <span class="tech-tag">AWS (Amazon Web Services)</span>
-            <span class="tech-tag">Cloud-Architekturen</span>
-            <span class="tech-tag">Digitalisierung komplexer Systeme</span>
+        <div class="hero-image">
+            <div class="hero-text fade-in">
+                <h1>Software Engineering & Architektur</h1>
+                <p>Nachhaltige Softwarelösungen durch 35 Jahre IT-Expertise.</p>
+            </div>
         </div>
+    </header>
 
-        <div class="tech-category">
-            <h3><i class="fa-solid fa-toolbox"></i> Tools & Methodik</h3>
-            <span class="tech-tag">Jira</span>
-            <span class="tech-tag">Confluence</span>
-            <span class="tech-tag">Agile Softwareentwicklung (Scrum/SAFe)</span>
-            <span class="tech-tag">Requirements Engineering</span>
+
+    <main class="container">
+        <div class="card">
+            <h2>Technologie-Stack & Expertise</h2>
+            <p class="summary">
+                Tiefgreifende Expertise in der objektorientierten Entwicklung (Java/JEE, Smalltalk) und im Entwurf
+                robuster Enterprise-Architekturen.
+                Spezialisiert auf Microservices, REST-APIs und die Integration komplexer Legacy-Systeme in moderne
+                Cloud-Umgebungen (AWS).
+            </p>
+
+            <div style="flex: 1; min-width: 200px; display: flex; justify-content: center;">
+                <img src="./images/software_architecture_for_cloud_applications_slide01.jpg"
+                    alt="software architecture for cloud applications"
+                    style="width: 100%; max-width: 500px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.15); object-fit: cover;">
+            </div>
+
+            <div class="tech-category">
+                <h3><i class="fa-solid fa-code"></i> Backend & Sprachen</h3>
+                <span class="tech-tag">Java (J2EE)</span>
+                <span class="tech-tag">Smalltalk</span>
+                <span class="tech-tag">Objektorientierte Programmierung (OOP)</span>
+                <span class="tech-tag">Enterprise Architecture</span>
+            </div>
+
+            <div class="tech-category">
+                <h3><i class="fa-solid fa-cloud"></i> Infrastructure & Cloud</h3>
+                <span class="tech-tag">AWS (Amazon Web Services)</span>
+                <span class="tech-tag">Cloud-Architekturen</span>
+                <span class="tech-tag">Digitalisierung komplexer Systeme</span>
+            </div>
+
+            <div class="tech-category">
+                <h3><i class="fa-solid fa-toolbox"></i> Tools & Methodik</h3>
+                <span class="tech-tag">Jira</span>
+                <span class="tech-tag">Confluence</span>
+                <span class="tech-tag">Agile Softwareentwicklung (Scrum/SAFe)</span>
+                <span class="tech-tag">Requirements Engineering</span>
+            </div>
+
+            <h3 style="margin-top: 2.5rem;">Schwerpunkte in Projekten</h3>
+            <ul>
+                <li>Konzeption und Realisierung von komplexen Java-basierten Enterprise-Lösungen.</li>
+                <li>Migration von Legacy-Systemen (z. B. Smalltalk) in moderne Architekturen.</li>
+                <li>Design und Implementierung skalierbarer Cloud-Infrastrukturen auf AWS.</li>
+                <li>Schnittstellenmanagement und Integration in heterogene IT-Landschaften.</li>
+            </ul>
         </div>
+    </main>
 
-        <h3 style="margin-top: 2.5rem;">Schwerpunkte in Projekten</h3>
-        <ul>
-            <li>Konzeption und Realisierung von komplexen Java-basierten Enterprise-Lösungen.</li>
-            <li>Migration von Legacy-Systemen (z. B. Smalltalk) in moderne Architekturen.</li>
-            <li>Design und Implementierung skalierbarer Cloud-Infrastrukturen auf AWS.</li>
-            <li>Schnittstellenmanagement und Integration in heterogene IT-Landschaften.</li>
-        </ul>
-    </div>
-</main>
-
-<footer>
-    <p>&copy; 2026 Thomas Richter | <a href="impressum.html">Impressum</a></p>
-</footer>
+    <footer>
+        &copy; 2026 Thomas Richter Solutions | Cottbus | Senior IT-Consultant |
+        <a href="impressum.html" style="color: #777e; text-decoration: none; margin-left: 5px;">Impressum</a> |
+        <a href="datenschutz.html" style="color: #777; text-decoration: none; margin-left: 5px;">Datenschutz</a>
+    </footer>
 
 </body>
+
 </html>
