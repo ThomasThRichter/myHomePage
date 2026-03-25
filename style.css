@@ -55,7 +55,7 @@ h2 {
 }
 
 .summary {
-    font-style: italic;
+    font-style: normal;
     font-size: 1.1rem;
     color: #555;
 }
@@ -64,7 +64,7 @@ h2 {
 .hero-image {
     /* Pfad zum Bild - stellen Sie sicher, dass die Datei im selben Ordner liegt */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                      url('./images/iStock-2216175729.jpg');
+                      url('./images/agile/iStock-2216175729.jpg');
     
     background-size: cover;
     background-position: center center;
